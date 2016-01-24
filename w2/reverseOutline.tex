@@ -59,18 +59,32 @@
 \section*{Abstract}
 
 \begin{enumerate}
-\item 1
-\item 2
+\item Despite the fame and glory of the book SICP and its influence on
+  the introductory computing courses, Scheme and functional
+  programming have lost their good impression due to shortcomings of
+  the book and the quaintness of Scheme.
+\item Proposing an alternative role for functional programming in the
+  first-year curriculum, and introducing the book, and discussing how
+  the approach provides a well preparation for a course on
+  object-oriented programming.
 \end{enumerate}
 
 \section{History and critique}
 
 \begin{enumerate}
-\item 3
-\item 4
-\item 5
-\item 6
-\item 7
+\item The book \textit{Structure and Interpretation of Computer
+  Programs (SICP)} liberated the introductory courses from to be
+  designed around the syntax of a famous programming language, but to
+  focus on the study of important ideas in computing such as
+  functional abstraction, data abstraction, streams, data-directed
+  programming, etc.
+\item Quickly both the course idea and the Scheme language became the
+  first choice of many universities.
+\item In early 90s, the influence of SICP and Scheme started to decay
+  due to complaints from instructors saying SICP is too hard, or from
+  programmers saying Scheme was too different than mainstream languages.
+\item This paper addresses the complaints and tries to overcome the
+  problems of SICP approach. Paper structure is outlined.
 \end{enumerate}
 
 \section{Structure}
@@ -78,67 +92,128 @@
 \subsection{Solving constraints}
 
 \begin{enumerate}
-\item 8
-\item 9
-\item 10
-\item 11
-\item 12
-\item 13
-\item 14
-\item 15
-\item 16
-\item 17
+\item A computing curriculum should produce programmers and software
+  engineers capable of adapting to the ever-evolving nature of the
+  field.
+\item It's difficult to impose this goal to the first-year course due
+  to a range of unrelated constraints (e.g. Faculty colleagues want a
+  specific industry language).
+\item Some faculty demand that the first course should teach a
+  language that'll be used in upstream courses.
+\item First-year students (and/or parents) come with strong,
+  preconvinced notions about programming and computing (e.g. latest
+  tech industry trends disucced in a magazine).
+\item The state of the first year students' education also poses some
+  constraints.
+\item Students come with a wide range of expectations, but almost
+  everyone expects that the college will help them find internships
+  and professional positions.
+\item Satisfying the primary goal subject to these constraints is
+  hard. We need to choose a programming language and introduce
+  programming ASAP, but we also need to convey the choices with good
+  reasons.
+\item Propose a solution by having a second look on the goal and
+  constraints. Curriculum cannot be based on the latest industry
+  trends, as it changes too fast. Still the students should be
+  prepared for the industry. We need to concentrate on the
+  first-summer (internship), and the last-year (interview for
+  positions).
+\item We need to concentrate on teaching the principles most of the
+  time, and show how these principles apply to the real world during
+  second semester of the first year and last year.
+\item Year should start with a heavy emphasis on principles and second
+  semester should illustrate the use of these principles in a
+  currently fashionable programming langauge.
 \end{enumerate}
 
 \subsection{Principles of programming}
 
 \begin{enumerate}
-\item 18
-\item 19
-\item 20
-\item 21
-\item 22
+\item We should identify the technical principles for the first-year
+  programming course. Good program design habits should be taught.
+\item Students must learn to read problem statements carefully
+  (e.g. identify classes of data that play a role) and rewrite these
+  into useful pieces (e.g. example data and program usage).
+\item Students must learn to organize programs to match for example
+  the identified classes of data. Small changes in the problem
+  translate to small changes in the program (helps industry too, rapid
+  change in requirements).
+\item Students must learn to use and walk through the examples they've
+  constructed before writing code.
+\item The last point in particular suggests that functional languages
+  with their natural model-view separation are superior choices for
+  this first year.
 \end{enumerate}
   
 \subsection{Principles of teaching}
 
 \begin{enumerate}
-\item 23
-\item 24
-\item 25
-\item 26
+\item It's a challange for first-year instructor to understand the
+  teaching priorities. Typically the teaching of language constructs
+  is explicit while the teaching of design principles remains
+  implicit.
+\item Conventional approach to teaching programming reverses the
+  natural roles of data and control. we should let data drive the
+  syllabus. force students to understand how to go from data to design
+  explicitly, and pick up language constructs implicitly.
+\item Most students are active learners. Examples should concentrate
+  on the design instead of specific langauge constructs.
+\item Summary. First course should focus on principles of program
+  design, and should avoid any kind of distractions from these
+  principles (e.g. picking problems from a complex domain or use
+  complex language).
 \end{enumerate}
 
 \section{Interpretation: functional versus object-oriented programming}
 
 \begin{enumerate}
-\item 27
+\item Returning to the choice of programming language. Suggesting that
+  first semester uses a simple functional langauge and the second
+  semester uses an industrially fashionable language (e.g. Java).
 \end{enumerate}
 
 \subsection{Functional and object-oriented programming}
 
 \begin{enumerate}
-\item 28
-\item 29
-\item 30
+\item Functional and object-oriented programming share the desired
+  curricular focus on data as the starting point for program design.
+\item The computational model of a functional language is a minor
+  extension of that of secondary school algebra. The model of
+  object-oriented computation requires a bit mote sophistication, but
+  it builds upon the model of functional langauges.
+\item Using a functional language followed by object-oriented language
+  is thus the natural choice.
 \end{enumerate}
 
 \subsection{The role of Scheme}
 
 \begin{enumerate}
-\item 31
-\item 32
-\item 33
-\item 34
-\item 35
+\item We picked Scheme langauge as the starting point.
+\item Scheme's syntax is simple.
+\item Scheme's semantics is easy to understand (the language is a
+  generalization of high school algebra, students doesn't need to
+  think about registers, stacks, memory cells, and other low-level
+  concepts).
+\item Scheme is safe. It detects and pinpoints the errors, giving a
+  valuable feedback.
+\item Scheme is dynamically typed. We don't need to explain type
+  errors vs syntax errors. We can also informally introduce a type
+  system as sets of values which is more intuitive to the students
+  (and provides a better transition to the second semester object
+  oriented langauge).
 \end{enumerate}
 
 \subsection{Programming environments}
 
 \begin{enumerate}
-\item 36
-\item 37
-\item 38
+\item It's not only a language choice, the programming environment
+  also matters a lot.
+\item Like the langauge, the first programming environment should be
+  a lightweight and easy-to-use tool.
+\item We believe that the lack of such a programming environment hurt
+  the SICP approach of teaching and the functional community in
+  general. For this we have produced an environment that supports
+  teaching program design principles with Scheme.
 \end{enumerate}
 
 \section{Interpretation: teaching design principles}
@@ -146,37 +221,79 @@
 \subsection{Structure and Interpretation of Computer Programs}
 
 \begin{enumerate}
-\item 39
-\item 40
-\item 41
-\item 42
-\item 43
-\item 44
+\item SICP covers many important program design ideas.
+\item SICP suffers from not looking at the programmers' perspective
+  (e.g. not explaining how and when programmers need a particular
+  idea, why do they need it)
+\item While covering important ideas in programming with examples,
+  SICP leaves the program design and the organization of these ideas
+  implicit.
+\item SICP also suffers from selecting exercises that uses complex
+  domain knowledge.
+\item While these examples may be interesting to the experience
+  students, they're not to the beginners. Students are spending a lot
+  of time on the domain knowledge and often end up confusing domain
+  knowledge and program design knowledge.
+\item SICP is great to introduce important concepts in computer
+  science, but it fails to recognize the role of the first course in
+  the curriculum.
 \end{enumerate}
 
 \subsection{How to Design Programs}
 
 \begin{enumerate}
-\item 45
-\item 46
-\item 47
-\item 48
-\item 49
-\item 50
-\item 51
-\item 52
-\item 53
-\item 54
-\item 55
+\item Introducing the book that addresses SICP's deficiencies along
+  four dimensions. 1) Explicit discussion on program design. 2) Series
+  of teaching languages (subsets of Scheme) with different knowledge
+  levels. 3) Exercises focus on program design, few require domain
+  knowledge. 4) More accessible forms of domain knowledge than SICP.
+\item Chapters and exercises in HtDP focuses on program design, only
+  the ``extended exercises'' concern domain knowledge.
+\item Explicit design knowledge is formulated as the design
+  recipe. Introducing basic design habits that the design recipe
+  enforces.
+\item The book contains a series of design recipes for designing
+  different kinds of abstractions over different kinds of data. Each
+  design recipe especially discusses when to use a technique or mode.
+\item The recipes also introduce a new distinction into program
+  design: structural vs. generative recursion.
+\item Compare the programming with structural and generative recursion
+  over example functions 'insert' and 'kwik'.
+\item Distinguishing the two forms of recursion and focusing on the
+  structural case makes our approach scalable to the object-oriented
+  (OO) world.
+\item SICP fails to distinguish the two notion of recursion. Failure
+  to recognize structural (recursive) reasoning causes it to omit the
+  discussion of reasoning about classes of data, which is the essence
+  of OO programming.
+\item HTDP introduces the idea of iterative refinement for both
+  programs and data separately, which in turn helps students produce
+  complex programs systematically, combining the design recipes with
+  the idea of refinement.
+\item HTDP and SICP also vastly differ with regard to the treatment of
+  language syntax. HTDP gradually increases the complexity of the
+  language while also explicitly discussing the need to do so.
+\item Finally, HTDP uses domain knowledge differently from SICP. It
+  uses domain knowledge that is within reach of most students.
 \end{enumerate}
 
 \section{Experience and outlook}
 
 \begin{enumerate}
-\item 56
-\item 57
-\item 58
-\item 59
+\item HTDP approach has been implemented at colleges and high
+  schools. College level (measurable) results are very strong.
+\item High School teachers report similar success results. Female
+  students like the HtDP curriculum exceptionally well.
+\item HTDP has validated the usefulness of functional programming and
+  functional programming languages in the first programming
+  course. The two keys to success were to tame Scheme into simple
+  teaching languages and to distill well-known functional principles
+  of programming into generally applicable design recipes.
+\item Hoping other functional communities can replicate this success
+  in different contexts. Teaching programming in plain Erlang,
+  Haskell, or ML implicitly will not do. We need to understand the
+  role of functional programming in our curricula and the needs of our
+  students.
 \end{enumerate}
 
 
