@@ -1,0 +1,115 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{textcomp}
+
+\usepackage{enumerate}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{Caner Derici}
+\fancyfoot[C]{\thepage}
+
+% \usepackage{lipsum}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
+
+\makeatletter% since there's an at-sign (@) in the command name
+\renewcommand{\@maketitle}{
+  \parindent=0pt% don't indent paragraphs in the title block
+  
+  {\Large \bf \@title}
+  
+  \Hrule%
+    
+  \textit{\@author \hfill \@date}
+  \par
+}
+\makeatother% resets the meaning of the at-sign (@)
+
+\title{Y790-32707 - HW \#2: Reverse Outlining - Commentary}
+\author{}
+\date{Caner Derici}
+
+\begin{document}
+%\pagenumbering{gobble}
+
+\maketitle
+
+%% Create a reverse outline for one of the model you selected in last
+%% week’s homework. Document the topic of each paragraph, and supporting
+%% points in each paragraph if present. Then write an commentary on the
+%% article’s structure, and discuss the overall organizing principle of
+%% the paper. Upload all elements--your reverse outline, the article you
+%% outlined, and your commentary--to Canvas as PDF file attachments
+%% and/or as a text entry...
+
+%% Be sure to include in both your reverse outline and your commentary
+%% citation information for the article you chose to outline.
+
+\begin{center}
+  Reverse Outline of : \textbf{The Structure and Interpretation of the Computer Science Curriculum \cite{sicc2004}}
+\end{center}
+
+%% article structure
+
+%% overall organizing principle
+
+%% Does every paragraph relate back to your main idea?
+
+%% Where might a reader have trouble following the order of your ideas?
+
+%% Do several of your paragraphs repeat one idea?
+
+%% Does one paragraph juggle several topics?
+
+%% Are your paragraphs too long? Too short?
+
+
+%% Is there a recognizable topic sentence?
+
+\paragraph{} This paper observes several deficiencies of a famous book SICP and its
+effect on the design of the computer science curriculum, particularly
+focusing on the first year programming course. Organization of the
+paper is very clear. It presents the problem in the first section. The
+second section lays out the constraints on the problem. Third section
+explains the principles of the solution. Fourth section introduces the
+new book designed around these principles, and compares it to
+SICP. Fifth section concludes the text.
+
+\paragraph{} The section titles relate to the main idea and the title of the paper,
+and looking at the individual sections and subsections, each paragraph
+relates back to the main idea of the corresponding section and/or
+subsection. There's not any particular piece in text that a reader
+might have some trouble following the main idea.
+
+\paragraph{} All paragraphs seem to be concerned with only one point. There are
+couple of paragraphs where it seems like there are two ideas, but
+usually one of them is a supporting argument for the main point. There
+are no two paragraphs making the same point. And they are more or less
+the same in size. Most of them have a recognizable topic sentence as
+the first sentence and supporting arguments afterwards.
+
+% CITATION
+
+
+\begin{thebibliography}
+
+\bibitem{sicc2004} Felleisen, M., Findler, R. B., Flatt, M., &
+  Krishnamurthi, S. (2004). The structure and interpretation of the
+  computer science curriculum. Journal of Functional Programming,
+  14(04), 365-378.
+
+
+%% \bibitem{www}
+%% E. Başar, C. Derici, Ç. Şenol, \emph{WorldWithWeb: A compiler from world applications to JavaScript}, In proceedings of The Scheme and Functional Programming Workshop\hskip 1em plus 0.5em minus 0.4em\relax Boston, Massachusetts, 2009.
+
+\end{thebibliography}
+
+
+\end{document}
