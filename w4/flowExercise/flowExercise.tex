@@ -41,6 +41,30 @@
 
 \maketitle% prints the title block
 
+\section{General Audiance - OLD}
+
+\paragraph{} To understand certain behavioral changes under different effects, the
+scientific principle of experimentation applies to the computer
+software as well. The story of executing a program on a computer
+starts with a human readable code in a certain programming
+language. That code needs to be translated by another program, namely
+a compiler, into another representation that a machine can read and
+execute. We are working on a just-in-time (JIT) compiler, namely
+Pycket, for the Racket programming language. Given a program written
+in the Racket language, Pycket translates it to a representation that
+will be evaluated in later phases again by Pycket to produce the final
+result.
+
+\paragraph{} Alternatively Pycket could use the machine representation
+produced by Racket's own compiler instead of manually creating one to
+proceed to the final result. Since the Racket's compiler is designed
+exclusively for Racket, the representation produced by it is highly
+optimized. The aim of our study is therefore to modify Pycket to use
+the alternative representation to find out the effects of the certain
+optimizations that are performed by Racket's compiler to the overall
+performance of Pycket. As a consequence, this will allow us to
+understand better the individual effects of distinct optimizations to
+the performance of JIT compilers in the general case.
 
 \section{General Audiance - NEW}
 
@@ -66,7 +90,6 @@ optimizations to the overall performance of Pycket. As a consequence,
 this will also allow us to understand better the individual effects of
 the distinct compiler optimizations to the performance of JIT
 compilers in general.
-
 
 \section{Book Exercise}
 
